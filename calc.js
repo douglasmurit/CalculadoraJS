@@ -1,28 +1,39 @@
 
-function somar(){
-       var n1=parseInt(document.getElementById("resultado")).value;
-       var n2=parseInt(document.getElementById("resultado")).value;
-       var soma = n1 + n2;
+
+var view = document.querySelector('button');
+
+view.onclick = function(){
+    mostrar(view);
+}
+
+
+
+
+function somar(y){
+       var x = parseInt(document.getElementById("item")).value;
+       
+       var y = x + x;
 }
 
 function subtrair(){
-    var n1=parseInt(document.getElementById("resultado")).value;
-    var n2=parseInt(document.getElementById("resultado")).value;
-    var soma = n1 - n2;
+   //funcao de subtrair//
 }
 
 function dividir(){
-    var n1=parseInt(document.getElementById("resultado")).value;
-    var n2=parseInt(document.getElementById("resultado")).value;
-    var soma = n1 / n2;
+    //funcao de dividir//
+
 }
 
 function multiplicar(){
-    var n1=parseInt(document.getElementById("resultado")).value;
-    var n2=parseInt(document.getElementById("resultado")).value;
-    var soma = n1 * n2;
+     //funcao de multiplicar//
 }
 
 function resultado(){
-    
+     //funcao de resultado//
+}
+
+function mostrar(){
+
+    var v = document.getElementById("resultado").value;
+    document.getElementById("resultado").innerHTML = v;
 }
